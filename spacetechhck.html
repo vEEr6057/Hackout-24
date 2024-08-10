@@ -5,65 +5,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Technology Innovation</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset default styles */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             color: #333;
+            background-color: #f4f4f4;
         }
+
         header {
-            background-color: #003366;
+            background-color: #1a1a2e;
             color: #fff;
-            padding: 20px;
             text-align: center;
+            padding: 1rem;
         }
+
+        nav {
+            background-color: #16213e;
+            padding: 0.5rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
         main {
-            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
         }
+
         section {
-            margin-bottom: 20px;
-            padding: 15px;
-            background: #fff;
+            background-color: #fff;
+            margin-bottom: 2rem;
+            padding: 2rem;
             border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        h2 {
-            color: #003366;
+
+        h1, h2, h3 {
+            margin-bottom: 1rem;
         }
-        @media (max-width: 600px) {
-            header {
-                font-size: 1.5em;
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .challenge-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .challenge-card {
+            background-color: #e0e0e0;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .solution-list {
+            list-style-type: none;
+        }
+
+        .solution-list li {
+            background-color: #e0e0e0;
+            margin-bottom: 0.5rem;
+            padding: 0.5rem;
+            border-radius: 3px;
+        }
+
+        footer {
+            background-color: #1a1a2e;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
             }
-            section {
-                padding: 10px;
+
+            nav ul li {
+                margin: 0.5rem 0;
             }
         }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>Space Technology Innovation</h1>
-    <p>Exploring Advanced Solutions for Tomorrow's Challenges</p>
-</header>
-
-<main>
-    <section>
-        <h2>Challenges in the Space Technology Industry</h2>
-        <p>The space technology industry faces challenges such as high development costs, lengthy timelines, and limited accessibility, hindering the ability to meet the growing demands.</p>
-    </section>
-
-    <section>
-        <h2>Need for Disruptive Technologies</h2>
-        <p>To keep pace with evolving needs, the industry must explore advancements in propulsion systems, materials science, robotics, and data processing.</p>
-    </section>
-
-    <section>
-        <h2>Unlocking Opportunities</h2>
-        <p>By addressing these challenges, we can unlock new opportunities for innovation, growth, and the advancement of human knowledge and exploration.</p>
-    </section>
-</main>
-
+    <header>
+        <h1>Space Technology Innovation</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#challenges">Challenges</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#opportunities">Opportunities</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="challenges">
+            <h2>Industry Challenges</h2>
+            <div class="challenge-grid">
+                <div class="challenge-card">
+                    <h3>High Development Costs</h3>
+                    <p>Traditional approaches often result in expensive space technology projects.</p>
+                </div>
+                <div class="challenge-card">
+                    <h3>Lengthy Development Timelines</h3>
+                    <p>Space technology projects can take years to complete, slowing innovation.</p>
+                </div>
+                <div class="challenge-card">
+                    <h3>Limited Accessibility</h3>
+                    <p>Space technology is often not accessible to a wide range of stakeholders.</p>
+                </div>
+                <div class="challenge-card">
+                    <h3>Rapidly Changing Needs</h3>
+                    <p>The industry struggles to keep pace with evolving stakeholder expectations.</p>
+                </div>
+            </div>
+        </section>
+        <section id="solutions">
+            <h2>Proposed Solutions</h2>
+            <ul class="solution-list">
+                <li>Enhance capabilities of existing space systems</li>
+                <li>Explore disruptive technologies</li>
+                <li>Advance propulsion systems</li>
+                <li>Innovate in materials science</li>
+                <li>Develop advanced robotics for space applications</li>
+                <li>Improve data processing capabilities</li>
+                <li>Create user-friendly space-based applications</li>
+            </ul>
+        </section>
+        <section id="opportunities">
+            <h2>Future Opportunities</h2>
+            <p>By addressing the challenges in the space technology industry, we can unlock new opportunities for:</p>
+            <ul>
+                <li>Innovation in space exploration</li>
+                <li>Growth of the commercial space sector</li>
+                <li>Advancement of human knowledge</li>
+                <li>Expansion of scientific research capabilities</li>
+                <li>Improvement of satellite communications</li>
+                <li>Development of space tourism</li>
+                <li>Exploration of extraterrestrial resource extraction</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Space Technology Innovation. All rights reserved.</p>
+    </footer>
 </body>
 </html>
